@@ -1,3 +1,7 @@
+{% if nginx_load_extra_modules %}
+{{ nginx_load_extra_modules }}
+{% endif %}
+
 user  {{ nginx_user }};
 
 error_log  {{ nginx_error_log }};
